@@ -9,6 +9,7 @@ This is on-going assignments from The Complete Java Development Bootcamp on Udem
 5. Loops
 6. Arrays
 - Capstone Project
+
 **Module 2: Object Oriented Programming**
 7. Objects
 8. Exception Handling
