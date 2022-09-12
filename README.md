@@ -19,3 +19,7 @@ This is on-going assignments from The Complete Java Development Bootcamp on Udem
 - Capstone Project 
 
 Started on September 9th, 2022 
+
+**Featured Projects:**
+
+[Chatbot:](https://github.com/whiteheadbria/java-bootcamp/blob/ffaa7baa58422bd83714f2484ec2feaf69f16290/Module%201%20-%20Introduction%20to%20Java/2.%20Variables/Challenge%202/Chatbot.java) A basic chatbot application that talks to the user. Carries a very simple conversation 
