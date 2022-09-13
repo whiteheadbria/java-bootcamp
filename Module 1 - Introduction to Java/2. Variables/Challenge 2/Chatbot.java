@@ -24,9 +24,17 @@ public class Chatbot {
 
         String language = scan.nextLine();
 
+        if (language.equals("Python") || (language.equals("python"))) {
+            System.out.println("\n" + "Oh no, not Python! Well, it was still great to meet you! Nice chatting with you." + name + ". I have to log off now. See ya!");
+        }
+
+        else {
+            System.out.println("\n" + language + ", that's great! Nice chatting with you." + name + ". I have to log off now. See ya!");
+        }
+
         scan.close();
 
-        System.out.println("\n" + language + ", that's great! Nice chatting with you." + name + ". I have to log off now. See ya!");
+       
         
      
 
