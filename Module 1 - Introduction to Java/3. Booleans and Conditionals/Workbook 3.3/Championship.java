@@ -1,23 +1,30 @@
 public class Championship {
     public static void main(String[] args) {
 
-        int gryffindor = 400;    //gryffindor points
-        int ravenclaw = 200;    //ravenclaw points
+        int hamilton = 850;    //hamilton points
+        int valterri = 500;    //valterri points
 
-        // int margin = amount of points by which gryffindor scored over ravenclaw;
+        int margin = hamilton - valterri;   //amount of points by which hamilton scored over valterri;
 
 
-        //if gryffindor wins by a margin of 300 points:
-             //print: Gryffindor takes the house cup!
+        //if hamilton wins by a margin of 300 points:
+        if (margin > 300) {
+            System.out.println("Hamilton takes the championship!");
+        }
 
-        //if gryffindor wins by a margin of any points: 
-            //print: In second place, Gryffindor!
+        else if (margin >= 0) {//Hamilton wins by a margin of any points: 
+            System.out.println("In second place, Hamilton!");
+        }
 
-        //if gryffindor loses by a margin of 100 points, they are third:
-            //print: In third place, Gryffindor!
 
-        //else:
-           //print: In fourth place, Gryffindor! 
+        else if (margin >= -100) { //loses within 100 points
+        System.out.println("In Third place, Hamilton!");
+        }
+
+        else {
+            System.out.println("In fourth place, Hamilton");
+        }
+            
         
     }
 }
