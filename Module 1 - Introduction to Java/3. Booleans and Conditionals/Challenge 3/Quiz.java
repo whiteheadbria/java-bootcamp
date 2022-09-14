@@ -4,35 +4,45 @@ public class Quiz {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
-        System.out.println("1. Which country held the 2016 Summer Olympics?");
-        System.out.println("\ta) China\n\tb) Ireland\n\tc) Brazil\n\td) Italy\n");
-        //store answer 1
-
-        System.out.println("\n2. Which planet is the hottest?");
-        System.out.println("\ta) Venus\n\tb) Saturn\n\tc) Mercury\n\td) Mars\n");
-        //store answer 2
-
-        System.out.println("\n3. What is the rarest blood type?");
-        System.out.println("\ta) O\n\tb) A\n\tc) B\n\td) AB-Negative\n");
-        //store answer 3
-
-        System.out.println("\n4. Which one of these characters is friends with Harry Potter?");
-        System.out.println("\ta) Ron Weasley\n\tb) Hermione Granger\n\tc) Draco Malfoy\n");
-        //store answer 4
-
         int score = 0;
 
+        System.out.println("1. Which track did Lewis Hamilton come back from essentially a 25 place grid penalty?");
+        System.out.println("\ta) COTA\n\tb) Brazil\n\tc) Singapore\n\td) Italy\n");
+        score++;
 
-        //Task 2: Check each answer - For each correct answer, add 5 points to the score. 
+        System.out.println("\n2. What track did 23XI Racing get their first win as an organization?");
+        System.out.println("\ta) Talladega\n\tb) Kansas\n\tc) Daytona\n\td) Miami\n");
+        score++;
+
+        System.out.println("\n3. What year did Lewis Hamilton win his 7th world championship?");
+        System.out.println("\ta) 2020\n\tb) 2018\n\tc) 2015\n\td) 2019\n");
+        score++;
+
+        System.out.println("\n4. What number does Lewis Hamilton drive in Formula 1?");
+        System.out.println("\ta) 44\n\tb) 23\n\tc) 11\n\td) 45\n");
+        score++;
+
+        System.out.println("\n5. What track did the number 45 sweep in 2022?");
+        System.out.println("\ta) Kansas\n\tb) Daytona\n\tc) Miami\n\td) Los Angeles\n");
+        //store answer 5
+        //score++
+
+        System.out.println("\n6. Which drivers are tied for seven World Championships in Formula 1?");
+        System.out.println("\ta) Lewis Hamilton\n\tb) George Russell\n\tc) Michael Schumacher\n\td) Sebastian Vettel\n");
+        //store answer 6
+        //score++
         
-        System.out.println("Your final score is: " + score + "/20");
+        
+
+        //Task 2: Check each answer - For each correct answer, add 5 points to the score. (if-else) 
+        
+        System.out.println("Your final score is: " + score + "/25");
 
         //Task 3: print a message depending on the score
 
-        // if the score is 15 or higher, print: "Wow, you know your stuff!";
+        // if the score is 15 or higher, print: "Wow, you know your motorsports!";
         // if the score is between 5 and 15, print "Not bad!";
-        // else, better luck next time. 
+        // Go rewatch some races and try again. 
 
 
         scan.close();
