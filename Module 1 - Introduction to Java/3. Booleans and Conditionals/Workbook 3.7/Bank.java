@@ -20,8 +20,7 @@ public class Bank {
             
 
             System.out.println("\nHow many years have you worked for?");
-            int years = scan.nextInt();  // Task 4 - Pick up number of years
-
+            int years = scan.nextInt(); 
 
             System.out.println("What is your name?");
             String name = scan.next();
