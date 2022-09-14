@@ -30,13 +30,15 @@ public class Dealership {
         }
 
 
+        
+
         System.out.println("\n" + name + ", what is your budget?");
-       // double budget = scan.nextDouble();
+        double budget = scan.nextDouble();
 
 
-        System.out.println("Great, " + name + ". A + <car brand and name> + is available for + <price>");
+        System.out.println("Great, " + name + ". A + <car brand and name> + is available for $" + budget);
 
-
+        scan.nextLine();
         System.out.println("Do you have insurance? 'Yes' or 'No'");
         String insurance = scan.nextLine();
 
@@ -62,16 +64,25 @@ public class Dealership {
         String license = scan.nextLine();
 
         switch(license) {
-            case "Yes": System.out.println("\nGreat " + name + " you have a license!"); break;
+            case "Yes":
+            case "YES":
+            case "yes": {
+
+            System.out.println("\nGreat " + name + " you have a license!"); break;
+            }
             
             case "No":
+            case "NO":
+            case "no": {
                 System.out.println("\nSo it seems you aren't legally able to drive, " + name); break;
-            
+            }
 
             default: System.out.println("\nPlease enter a valid response of 'Yes' or 'No' to if you have a license or not");
         }
 
+      //  scan.nextLine(); //? can remove? YES. if i left it there it would make me have to hit enter twice
 
+      //fix credit score. not correct ranges in the 670 ranges. so the good credit 
         System.out.println("What is your credit score?");
         int creditScore = scan.nextInt(); //credit scores are between 300 - 850 
         
@@ -79,7 +90,7 @@ public class Dealership {
             System.out.println(name + ", you have an Excellent credit score. The car is sold! It was a pleasure doing business with you");
         }
 
-        else if(creditScore >= 799 && creditScore <= 740) {
+        else if(creditScore >= 799 && creditScore <= 741) {
             System.out.println(name + ", you have a Very Good credit score. The car is sold! It was a pleasure doing business with you");
         }
 
@@ -106,9 +117,9 @@ public class Dealership {
         
 
 
-        System.out.println("Sold! Pleasure doing business with you?");
+     //   System.out.println("Sold! Pleasure doing business with you?");
 
-        System.out.println("Sadly! Your credit score does not allow me to sell you a car.");
+       // System.out.println("Sadly! Your credit score does not allow me to sell you a car.");
 
         scan.close();
 
