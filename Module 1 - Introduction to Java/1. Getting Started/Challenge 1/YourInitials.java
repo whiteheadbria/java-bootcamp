@@ -30,5 +30,8 @@ public class YourInitials {
         System.out.println("WW WW");
         System.out.println("WW WW");
         System.out.println("W   W");
+        
+        
+        //Initals are BNW
     }
 }
