@@ -3,8 +3,8 @@ This is on-going assignments from The Complete Java Development Bootcamp on Udem
 
 **Module 1: Introduction to Java**
 1. Getting Started
-2. Variables
-3. Booleans + Conditionals
+2. [Variables](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/2.%20Variables)
+3. [Booleans + Conditionals](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/3.%20Booleans%20and%20Conditionals)
 4. Functions
 5. Loops
 6. Arrays
