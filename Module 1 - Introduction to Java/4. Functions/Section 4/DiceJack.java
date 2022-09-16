@@ -35,8 +35,6 @@ public class DiceJack {
        System.out.println("The sum of the rolled dice are: " + rollSum + "\n");
        
 
-
-
        System.out.println("The numbers you entered are: " + pickOne + " " + pickTwo + " " + pickThree);
        System.out.println("The sum of your picks are: " + pickSum);
 
