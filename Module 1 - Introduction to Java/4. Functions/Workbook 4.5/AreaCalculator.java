@@ -18,7 +18,7 @@ public class AreaCalculator {
     }
 
     //Task 1 - Write a function that calculates the area of a square. 
-
+    
 
     /**
      * Function name: areaSquare - returns the area of a square.
@@ -31,7 +31,16 @@ public class AreaCalculator {
      */
     public static double areaSquare(double side) {
 
-        return 0;
+        if(side < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
+
+        // else {
+        //    side = Math.pow(side, 2);
+            
+        // }
+        return side = Math.pow(side, 2);
     }
 
 
@@ -48,9 +57,17 @@ public class AreaCalculator {
      *  1. If the length OR width is negative, prints "Error: impossible" and terminates the program.
      *  2. Calculates the area of the rectangle. A = length * width
      */
-    public static double areaRectangle(double length, double width) {
+    public static double areaRectangle(double length, double width, double area) {
+        if(length < 0 || width < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
 
-        return 0;  
+        else {
+            area = length * width;
+        }
+
+        return  area;  
     } 
 
     //Task 3 - Write a function that calculates the area of a triangle. 
@@ -65,9 +82,17 @@ public class AreaCalculator {
      *  1. If the base OR height is negative, prints "Error: impossible" and terminates the program.
      *  2. Calculates the area of the triangle. A = (base * height)/2
      */ 
-    public static double areaTriangle(double base, double height) {
+    public static double areaTriangle(double base, double height, double area) {
+        if (base < 0 || height < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
 
-        return 0; 
+        else {
+            area = (base * height)/2;
+        }
+
+        return area;
     }
 
     //Task 4 - Write a function that calculates the area of circle. 
@@ -82,9 +107,17 @@ public class AreaCalculator {
      *  1. If the radius is negative, prints "Error: impossible" and terminates the program.
      *  2. Calculates the area of the circle. 
      */ 
-    public static double areaCircle(double radius) {
+    public static double areaCircle(double radius, double area) {
+        if(radius < 0) {
+            System.out.println("Error: Impossible");
+            System.exit(0);
+        }
 
-        return 0;
+        else {
+            area = Math.pow(radius, 2)*Math.PI;
+        }
+
+        return area;
     }
 
 
