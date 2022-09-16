@@ -29,18 +29,18 @@ public class AreaCalculator {
      *  1. If the side is negative, prints "Error: impossible" and terminates the java program.
      *  2. Calculates the area of the square. A = side²
      */
-    public static double areaSquare(double side) {
+    public static double areaSquare(double side, double area, String shape) {
 
         if(side < 0) {
             System.out.println("Error: Impossible");
             System.exit(0);
         }
 
-        // else {
-        //    side = Math.pow(side, 2);
+        else {
+        area = Math.pow(side, 2);
             
-        // }
-        return side = Math.pow(side, 2);
+        }
+        return area;
     }
 
 
@@ -57,7 +57,7 @@ public class AreaCalculator {
      *  1. If the length OR width is negative, prints "Error: impossible" and terminates the program.
      *  2. Calculates the area of the rectangle. A = length * width
      */
-    public static double areaRectangle(double length, double width, double area) {
+    public static double areaRectangle(double length, double width, double area, String shape) {
         if(length < 0 || width < 0) {
             System.out.println("Error: Impossible");
             System.exit(0);
@@ -82,7 +82,7 @@ public class AreaCalculator {
      *  1. If the base OR height is negative, prints "Error: impossible" and terminates the program.
      *  2. Calculates the area of the triangle. A = (base * height)/2
      */ 
-    public static double areaTriangle(double base, double height, double area) {
+    public static double areaTriangle(double base, double height, double area, String shape) {
         if (base < 0 || height < 0) {
             System.out.println("Error: Impossible");
             System.exit(0);
@@ -107,7 +107,7 @@ public class AreaCalculator {
      *  1. If the radius is negative, prints "Error: impossible" and terminates the program.
      *  2. Calculates the area of the circle. 
      */ 
-    public static double areaCircle(double radius, double area) {
+    public static double areaCircle(double radius, double area, String shape) {
         if(radius < 0) {
             System.out.println("Error: Impossible");
             System.exit(0);
