@@ -83,6 +83,13 @@ public class RockPaperScissors {
     public static String result(String yourChoice, String computerChoice) {
         String result = "";
 
+        if(yourChoice.equals("rock") || (yourChoice.equals("ROCK"))|| (yourChoice.equals("Rock")) && (computerChoice.equals("scissors")) {
+            result = "You win!";
+        }
+
+        else if(yourChoice.equals("paper") || (yourChoice.equals("PAPER"))|| (yourChoice.equals("Paper")) && (computerChoice.equals("rock")) {
+            result = "You win!";
+        }
         return result;
       }
  
