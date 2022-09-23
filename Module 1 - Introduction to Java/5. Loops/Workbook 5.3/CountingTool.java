@@ -6,6 +6,7 @@ public class CountingTool {
 
 
         /*Task 1 – Choose a number
+       
 
             Ask: Hi Timmy! Choose a number to count to: 
 
@@ -17,6 +18,13 @@ public class CountingTool {
              Let's say Timmy entered 5, you would display: 0 1 2 3 4 5 
 
         */
+
+        System.out.print("Hi Timmy! Choose a number to count to: ");
+        int number = scan.nextInt();
+        
+        for(int i = 0; i <= number; i++) {
+            System.out.print(i + " ");
+        }
 
         scan.close();
     }
