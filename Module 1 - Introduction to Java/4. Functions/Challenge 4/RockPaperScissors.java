@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.print.attribute.PrintRequestAttribute;
-
 public class RockPaperScissors {
     public static void main(String[] args) {
         
@@ -10,15 +8,9 @@ public class RockPaperScissors {
         System.out.println("Let's play Rock Paper Scissors.");
         System.out.println("When I say 'shoot', Choose: rock, paper, or scissors.\n");
         System.out.println("Are you ready? Write 'yes' if you are.");
-
-    //Task 1: See if the user wants to play. 
+ 
         String play = scan.nextLine();
 
-    /*Task 2: Set up the game
-             – get the computer choice (can only be done after task 3).
-             – get the result (can only be done after task 4)
-             – print everything (can only be done after task 5).   
-    */
 
     if(play.equals("yes") || play.equals("YES") || play.equals("Yes")) 
     {
@@ -40,8 +32,6 @@ public class RockPaperScissors {
     }
     
 
-    //Task 3  – Write a function where the computer picks a random choice.
-
      public static String computerChoice() {
         double randomNumber = Math.random() * 3; // range: 0 - 2.9999
         int integer = (int)randomNumber; // range: 0 -2
@@ -55,14 +45,12 @@ public class RockPaperScissors {
         
      }
 
-    //Task 4  – Write a function that compares the choices and returns the result.
 
     /**
      * Function name: result - It returns the result of the game.
      *  @param yourChoice (String)
      *  @param computerChoice (String) 
      *  @return result (String) 
-
      */
 
     public static String result(String yourChoice, String computerChoice) {
@@ -101,7 +89,6 @@ public class RockPaperScissors {
        return result;
       }
  
-     //Task 5  – Write a function that prints your choice, the computer's, and the result.
 
     /**
      * Name: printResult - It prints everything (your choice, computer choice, result)
@@ -109,12 +96,6 @@ public class RockPaperScissors {
      * @param computerChoice (String)
      * @param result (String)
      * 
-     * Inside the function:
-     * 
-     *  1. prints everything:
-     *      – prints: You chose:          <your choice>
-     *      – prints: The computer chose: <computer choice>
-     *      – prints: <result>
      */
 
      public static void printResult(String yourChoice, String computerChoice, String result) {
