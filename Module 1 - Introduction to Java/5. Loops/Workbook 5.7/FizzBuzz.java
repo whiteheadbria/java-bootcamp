@@ -2,6 +2,21 @@ public class FizzBuzz {
     public static void main(String[] args) {
 
        // Task 1 – Make a for loop that counts from 0 to 18. 
+       for (int i = 0; i < 19; i++) {
+
+        if(i % 3 == 0 && i % 5 == 0) {
+            System.out.print(i + " FizzBuzz\n");
+        }
+        
+        else if(i % 3 == 0) {
+            System.out.print(i + " Fizz\n");
+        }
+
+        else if(i % 5 == 0) {
+            System.out.print(i + " Buzz\n");
+        }
+
+       }
        
        /* Task 2
              
