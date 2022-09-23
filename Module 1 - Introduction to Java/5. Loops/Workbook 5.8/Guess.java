@@ -3,13 +3,21 @@ import java.util.Scanner;
 public class Guess  {
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
        /* Task 1 
             1. Store a "secret" number between 1 and 5. 
             2. Then, prompt the user to enter a guess.
        */
        System.out.print("I chose a number between 1 and 5. Try to guess it: ");
-        
-       Scanner scan = new Scanner(System.in);
+       int guess = scan.nextInt();
+
+       while (guess != 4) {
+        System.out.print("Guess again: ");
+        guess = scan.nextInt();
+
+       }
+
+       System.out.print("You got it!");
 
 
         /* Task 2 
