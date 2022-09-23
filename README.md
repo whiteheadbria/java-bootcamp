@@ -5,7 +5,7 @@ This is on-going assignments from The Complete Java Development Bootcamp on Udem
 1. [Getting Started](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/1.%20Getting%20Started)
 2. [Variables](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/2.%20Variables)
 3. [Booleans + Conditionals](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/3.%20Booleans%20and%20Conditionals)
-4. Functions
+4. [Functions](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/4.%20Functions)
 5. Loops
 6. Arrays
 - Capstone Project
