@@ -7,20 +7,20 @@ public class CounterTool {
         System.out.println("Jimmy: It depends.");
         System.out.println("Oh, ok...");
 
-      /* Task 1 – Get integers from the user.
+
+        System.out.print("1. Pick a number to count by: ");
+        int countByNumber = scan.nextInt();
+
+        System.out.print("2. Pick a number to start counting from: ");
+        int countingFrom = scan.nextInt();
+
+        System.out.print("3. Pick a number to count to: ");
+        int countTo = scan.nextInt();
 
 
-          1.   print : Pick a number to count by:
-               pick up the user's answer
-        
-          2.   print : Pick a number to start counting from:
-               pick up the user's answer
-
-          3.    print : Pick a number to count to:
-                pick up the user's answer 
-                
-        */
-        
+        for(int i = countingFrom; i <= countTo; i+=countByNumber) {
+          System.out.print(i + " ");
+        }
 
       /* Task 2 – Create a for loop that:
             1. starts from the second number.
