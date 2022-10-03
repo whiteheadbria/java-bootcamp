@@ -8,6 +8,15 @@ public class HighScore {
          *         Example – Here are the scores: 14775 48328 7928 27102 21787 21063 38096 42711 32863 23707
          */
 
+         int[] scores = {randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), 
+                        randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber()};
+        
+         System.out.print("Here are the scores: ");
+         for (int i = 0; i < scores.length; i++) {
+            System.out.print(scores[i] + " ");
+         }
+
+
          /** Task 3
           *  
           *   1. Using a for loop, find the highest score in the array and update the highScore.
@@ -15,10 +24,14 @@ public class HighScore {
 
           */
 
-         
+         int highestScore = 0;
+         for(int i = 0; i < scores.length; i++) {
+            if(scores[i] > highestScore) {
+                highestScore = scores[i];
+            }
+         }
 
-          
-
+         System.out.println("\nThe highest score is: " + highestScore + ". Give that man a cookie");
 
     }
     /** Task 1
