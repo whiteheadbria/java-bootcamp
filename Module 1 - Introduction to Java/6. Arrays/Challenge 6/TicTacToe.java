@@ -8,12 +8,16 @@ public class TicTacToe {
             System.out.println("\nLet's play tic tac toe");
 
             //Task 1: Create an array with three rows of '_' characters.
-
+            char[][] board = {
+              {'_', '_', '_'},
+              {'_', '_', '_'},
+              {'_', '_', '_'}
+            };
             //Task 2: Call the function printBoard();
-
+            printBoard(board);
              
               /*
-              {  Task 3: Loop through turns.
+              {  Task 3: Loop through turns. Loop runs 9 times 
 
                   if (X) turn {
                      Task 4: call askUser(). 
@@ -23,7 +27,20 @@ public class TicTacToe {
                       Task 5: populate the board using askUser's return value. Then, print it.
 
                   }
+                */ 
 
+                for(int i = 0; i < 9; i++) {
+                  if(i % 2 == 0) {
+                    askUser(board);
+                  }
+                  else {
+                    askUser(board);
+                  }
+
+                }
+                
+
+              /* 
                 Task 6 - Call the function.
                    if return value == 3 {
                      print: X wins and break the loop
@@ -50,6 +67,20 @@ public class TicTacToe {
      *      • each character in the grid has one space from the other character
      */        
 
+     public static void printBoard(char[][] board) {
+      System.out.print("\n");   //print a new line
+
+      for(int i = 0; i < board.length; i++) {
+        System.out.print("\t");                   //tab of space
+
+        for(int j = 0; j < board[i].length; j++) {
+          System.out.print(board[i][j] + " "); // one space from other character       
+      }
+
+      System.out.print("\n\n");
+    }
+     }
+
    /** Task 4 - Write a function that lets the user choose a spot
      * Function name – askUser
      * @param board (char[][] board)
@@ -61,6 +92,14 @@ public class TicTacToe {
      *   3. Return the row and column in an int[] array.
      * 
      */
+
+     public static int askUser(char[][]board) {
+      System.out.print("- pick a row and column number");
+      int area = scan.nextInt();
+      
+      //return spot;
+
+     }
 
     /** Task 6 - Write a function that determines the winner
      * Function name - checkWin 
