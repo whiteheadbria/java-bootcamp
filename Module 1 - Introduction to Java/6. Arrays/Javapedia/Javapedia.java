@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Javapedia {
@@ -12,6 +11,8 @@ public class Javapedia {
         
         //Task 2 – Create a 2D array with a variable number of rows, and 3 values per row.  
         String[][] database = new String[numberFigures][3];     
+
+        scan.nextLine();
          
         //Create for loop runs through every row in database. 
         // Task 3 
@@ -20,30 +21,22 @@ public class Javapedia {
 
             System.out.println("\n\tFigure " + (i+1)); 
 
-            System.out.print("\t - Name: ");
-            String name = scan.next();
+            System.out.print("\tName: ");
+            database[i][0] = scan.nextLine();
 
-            scan.nextLine();
+            System.out.print("\tDate of birth: ");
+            database[i][1] = scan.nextLine();
 
-
-            System.out.print("\t - Date of birth: ");
-            String birthdate = scan.next();
-
-            scan.nextLine();
-
-            System.out.print("\t - Occupation: ");
-            String occupation = scan.nextLine();
+            System.out.print("\tOccupation: ");
+            database[i][2] = scan.nextLine();
 
             System.out.print("\n");
-
         }
        
         
         System.out.println("These are the values you stored:"); 
         //Task 4: call print2DArray. 
         print2DArray(database);
-      
-            
 
         System.out.print("\nWho do you want information on? ");  
         
@@ -55,9 +48,15 @@ public class Javapedia {
 
         */  
         String lookUp = scan.nextLine();
+        for(int i = 0; i < database.length; i++) {
+            if(database[i][0].equals(lookUp)) {
+                System.out.print("\tName:" + " " + database[i][0]); //name
+                System.out.print("\tDate of birth:" + " " + database[i][1]); //birth date
+                System.out.print("\tOccupation:" + " " + database[i][2]); //occupation
 
-             
-
+            }
+        }
+        
         scan.close();
     }
 
