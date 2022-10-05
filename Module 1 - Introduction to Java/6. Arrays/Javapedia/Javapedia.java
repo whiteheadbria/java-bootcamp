@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Javapedia {
@@ -7,31 +8,42 @@ public class Javapedia {
         System.out.println("How many historical figures will you register?");
         //Task 1 – Ask the user: how many historical figures will you register?
         //       – Store the value.
+        int numberFigures = scan.nextInt();
         
-        //Task 2 – Create a 2D array with a variable number of rows, and 3 values per row.         
+        //Task 2 – Create a 2D array with a variable number of rows, and 3 values per row.  
+        String[][] database = new String[numberFigures][3];     
          
-        //Watch out for the nextLine() pitfall. 
-        /* Task 3 
-        for (____) {
+        //Create for loop runs through every row in database. 
+        // Task 3 
+        
+        for (int i = 0; i < database.length; i++) {
 
             System.out.println("\n\tFigure " + (i+1)); 
 
             System.out.print("\t - Name: ");
-            pick up and store figure's name.   
+            String name = scan.next();
+
+            scan.nextLine();
+
 
             System.out.print("\t - Date of birth: ");
-            pick up and store figure's birthday.
+            String birthdate = scan.next();
+
+            scan.nextLine();
 
             System.out.print("\t - Occupation: ");
-            pick up and store figure's occupation. 
+            String occupation = scan.nextLine();
 
             System.out.print("\n");
 
         }
+       
         
-        */
         System.out.println("These are the values you stored:"); 
         //Task 4: call print2DArray. 
+        print2DArray(database);
+      
+            
 
         System.out.print("\nWho do you want information on? ");  
         
@@ -41,7 +53,10 @@ public class Javapedia {
               print(    tab of space    Date of birth: <date of birth>)
               print(    tab of space    Occupation: <occupation>)
 
-        */        
+        */  
+        String lookUp = scan.nextLine();
+
+             
 
         scan.close();
     }
@@ -56,5 +71,15 @@ public class Javapedia {
      *     • each value in database has one space from the other value. 
      *     • print a new line.
      */
+
+     public static void print2DArray(String[][] array) {
+        for(int i = 0; i < array.length; i++) {
+            System.out.print("\t");
+            for(int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.print("\n");
+        }    
+     }
 
 }
