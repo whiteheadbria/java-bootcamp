@@ -31,12 +31,32 @@ public class TicTacToe {
 
                 for(int i = 0; i < 9; i++) {
                   if(i % 2 == 0) {
-                    askUser(board);
+                    System.out.println("Turn X:");
+                    int[] spot = askUser(board);
+                    board[spot[0]][spot[1]] = 'X';
+                    printBoard(board);
                   }
                   else {
-                    askUser(board);
+                    System.out.println("Turn O:");
+                    int[] spot = askUser(board);
+                    board[spot[0]][spot[1]] = 'O';
+                    printBoard(board);
                   }
 
+                  if (checkWin(board) == 3) {
+                    System.out.println("X wins");
+                    break;
+                  }
+    
+                  else if (checkWin(board) == -3) {
+                    System.out.println("O wins");
+                    break;
+                  }
+    
+                  else if(i == 8) {
+                    System.out.println("It's a tie!");
+                  }
+                  
                 }
                 
 
@@ -92,14 +112,25 @@ public class TicTacToe {
      *   3. Return the row and column in an int[] array.
      * 
      */
+     
+     public static int[] askUser(char[][]board) {     
+      System.out.print(" - pick a row and a column number: ");
 
-     public static int askUser(char[][]board) {
-      System.out.print("- pick a row and column number");
-      int area = scan.nextInt();
-      
-      //return spot;
+      int row = scan.nextInt();
+      int column = scan.nextInt();
+
+      while(board[row][column] != ('_')) {
+        System.out.print("Spot taken, please try again: ");
+        row = scan.nextInt();
+        column = scan.nextInt();
+      }
+
+      int[] spot = {row, column};
+      return spot; 
 
      }
+
+     
 
     /** Task 6 - Write a function that determines the winner
      * Function name - checkWin 
@@ -114,5 +145,80 @@ public class TicTacToe {
      *   5. Check the right diagonal for a straight X or straight O (Task 10).
      */
 
+     public static int checkWin(char[][]board) {
+      int count = 0;
 
+      //rows count
+      for(int i = 0; i < board.length; i++) {
+        for(int j = 0; j < board[i].length; j++) {
+
+          if(board[i][j] == 'X') {
+            count++; // count X as 1 
+          }
+
+          else if(board[i][j] == 'O') {
+            count--; // count O as -1
+          }
+        }
+
+        if(count == 3 || count == -3) {
+          return count; // if count isn't 3 or -3 move to next row and reset
+        }
+        else {
+          count = 0; //reset count move to next row
+        }
+      }
+
+
+      for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 3; j++) {
+
+          if(board[j][i] == 'X') {
+          count++;
+          }
+
+        else if(board[j][i] == 'O') {
+          count--;
+        }
+      } // j for loop close
+
+      if(count == 3 || count == -3) {
+        return count; // if count isn't 3 or -3 move to next row and reset
+      }
+
+      else {
+        count = 0; //reset count move to next row
+      }
+     }
+
+
+     for(int i = 0; i < 3; i++) {
+        if(board[i][i] == 'X') {
+        count++;
+        }
+
+      else if(board[i][i] == 'O') {
+        count--;
+      }
+    }
+
+
+    if(count == 3 || count == -3) {
+      return count; // if count isn't 3 or -3 move to next row and reset
+    }
+    else {
+      count = 0; //reset count move to next row
+    }
+
+   for(int i = 0; i < 3; i++) {
+      if(board[i][2-i] == 'X') {
+      count++;
+      }
+      
+    else if(board[i][2-i] == 'O') {
+      count--;
+    }
+  }
+    return count;
 }
+     }
