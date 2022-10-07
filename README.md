@@ -10,7 +10,7 @@
 4. [Functions](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/4.%20Functions)
 5. [Loops](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/5.%20Loops)
 6. [Arrays](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/6.%20Arrays)
-##### [Module 1 Capstone Project](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/Capstone%20Project/hangman) 
+##### [Module 1 Capstone Project: Hangman](https://github.com/whiteheadbria/java-bootcamp/tree/main/Module%201%20-%20Introduction%20to%20Java/Capstone%20Project/hangman) 
 
 ## **Module 2: Object Oriented Programming**
 7. Objects
