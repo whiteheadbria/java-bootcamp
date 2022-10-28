@@ -71,6 +71,14 @@ public class Car {
         System.out.println("Drive to the nearest exit\n");
     }
 
+    public String toString() {
+        return "Make: " + this.make + ".\n"
+        + "Price: " + this.price + ".\n"
+        + "Year: " + this.year + ".\n" 
+        + "Color: " + this.color + ".\n"
+        + "Parts: " + Arrays.toString(parts) + ".\n";
+    }
+ 
 
 
 

@@ -12,7 +12,10 @@ public class Main {
         jeep2.setParts(new String[] {"tires", "filter"}); // return new String[] {"1", "2", ...}
 
 
-        System.out.println(Arrays.toString(jeep2.getParts()));
+        System.out.println(jeep);
+        System.out.println(bronco);
+        System.out.println(jeep2);
+
 
      }
 }
