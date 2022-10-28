@@ -21,7 +21,7 @@ public class Car {
         this.make = source.make;
         this.price = source.price;
         this.year = source.year;
-        this.color = color;
+        this.color = source.color;
         this.parts = Arrays.copyOf(source.parts, source.parts.length);
 
     }

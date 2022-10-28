@@ -1,21 +1,24 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class Main {
     public static void main (String[] args) {
 
-        String[] parts ={"tires", "keys"};
-
-        Car jeep = new Car("Jeep", 30000, 2022, "Slate Grey", parts); //Java creates an object of the car class
-        Car bronco = new Car("Bronco", 32000, 2022, "Area 51", parts);
-        Car jeep2 = new Car(jeep);
-        jeep2.setColor("Jet Black");
-        jeep2.setParts(new String[] {"tires", "filter"}); // return new String[] {"1", "2", ...}
+        Car[] cars = new Car[] {
+            new Car("Jeep", 30000, 2022, "Slate Grey", new String[] {"tires", "keys"}), //Java creates an object of the car class
+            new Car("Bronco", 32000, 2022, "Area 51", new String[] {"tires", "keys"}),
+            new Car("Jeep", 30000, 2022, "Blue", new String[] {"tires", "filer"}),
+        };
 
 
-        System.out.println(jeep);
-        System.out.println(bronco);
-        System.out.println(jeep2);
 
+        Dealership dealership = new Dealership();
+        for(int i = 0; i < cars.length; i++) {
+            dealership.setCar(cars[i], i);
+        }
+
+        Car newCar = dealership.getCar(0);
+        newCar.setColor("blue");
+        System.out.println(dealership.getCar(0));
 
      }
 }
