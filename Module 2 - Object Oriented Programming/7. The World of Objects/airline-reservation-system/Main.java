@@ -4,18 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person person = new Person("Briona Whitehead", "American", "01/21/1998", 44);
+        String[] passport = new String[3];
+        Person person = new Person("Briona Whitehead", "American", "01/21/1998", 9, passport);
+        if (person.applyPassport() == true) {
+            person.setPassport();
+        }
 
+        System.out.println("Name: " + person.getName() + "\n" +
+        "Nationality: " + person.getNationality() + "\n" + 
+        "Date of Birth: " + person.getDateOfBirth() + "\n" +
+        "Seat Number: " + person.getSeatNumber() + "\n" +
+        "Passport: " + (Arrays.toString(person.getPassport())));
 
-        System.out.println("Name: " + person.name + "\n" + "Nationality: " + person.nationality + "\n"
-        + "Date of Birth: " + person.dateOfBirth + "\n" + "Seat Number: " + person.seatNumber + "\n");
-
-
-
-      
-      
-      
     }
-  
-  
+
 }
